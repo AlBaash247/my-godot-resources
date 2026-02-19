@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Enemy2DType" load_steps=3 format=3 uid="uid://bmw2q128hp1aq"]
+
+[ext_resource type="Script" uid="uid://b5q6uanox4bu5" path="res://resources-scripts/enemy_2d_type.gd" id="1_bgnes"]
+[ext_resource type="Texture2D" uid="uid://bla20228bkhm3" path="res://assets/images/enemy_green.png" id="2_on6y7"]
+
+[resource]
+script = ExtResource("1_bgnes")
+name = "Catnip"
+texture = ExtResource("2_on6y7")
+type = 1
+damage = 75.0
+health = 225.0
+metadata/_custom_type_script = "uid://b5q6uanox4bu5"

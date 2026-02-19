@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://chw7rj0ks5y84" path="res://assets/images/icon.svg" id="1_bswci"]
 [ext_resource type="PackedScene" uid="uid://wky5jwvf4dm0" path="res://scenes/enemy.tscn" id="2_rus8k"]
-[ext_resource type="Resource" uid="uid://bvu2sqimtgokx" path="res://resources/enemy_type_red.tres" id="3_4nkto"]
-[ext_resource type="Resource" uid="uid://2tr03ao8kcfl" path="res://resources/enemy_type_blue.tres" id="4_fcfvj"]
-[ext_resource type="Resource" uid="uid://cars4b865inj3" path="res://resources/enemy_type_green.tres" id="5_pa8r4"]
+[ext_resource type="Resource" uid="uid://dr07m3wslerb7" path="res://resources/enemy_blue.tres" id="3_4nkto"]
+[ext_resource type="Resource" uid="uid://bmw2q128hp1aq" path="res://resources/enemy_green.tres" id="4_fcfvj"]
+[ext_resource type="Resource" uid="uid://dmyunc0wv3i4f" path="res://resources/enemy_red.tres" id="5_pa8r4"]
 
 [node name="Level_1" type="Node2D"]
 
@@ -32,12 +32,16 @@ polygon = PackedVector2Array(0, 16, 0, 640, 1152, 640, 1152, 0, 960, 0, 960, 472
 
 [node name="Enemy1" parent="." instance=ExtResource("2_rus8k")]
 position = Vector2(888, 64)
-res = ExtResource("4_fcfvj")
+stats_res = ExtResource("3_4nkto")
 
 [node name="Enemy2" parent="." instance=ExtResource("2_rus8k")]
 position = Vector2(576, 64)
-res = ExtResource("5_pa8r4")
+stats_res = ExtResource("4_fcfvj")
 
 [node name="Enemy3" parent="." instance=ExtResource("2_rus8k")]
 position = Vector2(280, 64)
-res = ExtResource("3_4nkto")
+stats_res = ExtResource("5_pa8r4")
+
+[node name="Enemy4" parent="." instance=ExtResource("2_rus8k")]
+position = Vector2(888, 62)
+stats_res = ExtResource("5_pa8r4")
