@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Enemy2DType" load_steps=3 format=3 uid="uid://cars4b865inj3"]
+
+[ext_resource type="Script" uid="uid://b5q6uanox4bu5" path="res://resources-scripts/enemy_2d_type.gd" id="1_cynx3"]
+[ext_resource type="Texture2D" uid="uid://bla20228bkhm3" path="res://assets/images/enemy_green.png" id="2_cynx3"]
+
+[resource]
+script = ExtResource("1_cynx3")
+texture = ExtResource("2_cynx3")
+SPEED = 350.0
+metadata/_custom_type_script = "uid://b5q6uanox4bu5"

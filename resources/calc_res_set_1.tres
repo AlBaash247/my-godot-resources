@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="my_calc_res" load_steps=2 format=3 uid="uid://dyerxa0qyskbm"]
+
+[ext_resource type="Script" uid="uid://2hkk20ob5vha" path="res://resources-scripts/calc_res.gd" id="1_0gcpl"]
+
+[resource]
+script = ExtResource("1_0gcpl")
+name = "CALC 1"
+equation = 3
+number_1 = 7.0
+number_2 = 8.0
+metadata/_custom_type_script = "uid://2hkk20ob5vha"

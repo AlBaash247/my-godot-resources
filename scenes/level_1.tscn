@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://uhaik5i3sapy"]
+
+[ext_resource type="Texture2D" uid="uid://chw7rj0ks5y84" path="res://assets/images/icon.svg" id="1_bswci"]
+[ext_resource type="PackedScene" uid="uid://wky5jwvf4dm0" path="res://scenes/enemy.tscn" id="2_rus8k"]
+[ext_resource type="Resource" uid="uid://bvu2sqimtgokx" path="res://resources/enemy_type_red.tres" id="3_4nkto"]
+[ext_resource type="Resource" uid="uid://2tr03ao8kcfl" path="res://resources/enemy_type_blue.tres" id="4_fcfvj"]
+[ext_resource type="Resource" uid="uid://cars4b865inj3" path="res://resources/enemy_type_green.tres" id="5_pa8r4"]
+
+[node name="Level_1" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(107.49999, 325)
+scale = Vector2(1.5, 5)
+texture = ExtResource("1_bswci")
+
+[node name="Sprite2D2" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(1056, 325)
+scale = Vector2(1.5, 5)
+texture = ExtResource("1_bswci")
+
+[node name="Sprite2D3" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(576.63434, 553.80225)
+rotation = 1.5707964
+scale = Vector2(1.3468401, 6.042669)
+texture = ExtResource("1_bswci")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 16, 0, 640, 1152, 640, 1152, 0, 960, 0, 960, 472, 208, 472, 208, 0, 0, 0)
+
+[node name="Enemy1" parent="." instance=ExtResource("2_rus8k")]
+position = Vector2(888, 64)
+res = ExtResource("4_fcfvj")
+
+[node name="Enemy2" parent="." instance=ExtResource("2_rus8k")]
+position = Vector2(576, 64)
+res = ExtResource("5_pa8r4")
+
+[node name="Enemy3" parent="." instance=ExtResource("2_rus8k")]
+position = Vector2(280, 64)
+res = ExtResource("3_4nkto")

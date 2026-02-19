@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqlj4t87kshrq"]
+
+[ext_resource type="Script" uid="uid://c23uxpbrme82" path="res://scripts/calc_1.gd" id="1_bhnep"]
+[ext_resource type="Script" uid="uid://2hkk20ob5vha" path="res://resources-scripts/calc_res.gd" id="2_ndkd3"]
+[ext_resource type="Resource" uid="uid://dyerxa0qyskbm" path="res://resources/calc_res_set_1.tres" id="2_wh5g6"]
+[ext_resource type="Resource" uid="uid://cpd1uw0a1y4cx" path="res://resources/calc_res_set_2.tres" id="3_ndkd3"]
+
+[sub_resource type="Resource" id="Resource_a7i6v"]
+script = ExtResource("2_ndkd3")
+name = "CcC"
+number_1 = 15.0
+number_2 = 23.0
+metadata/_custom_type_script = "uid://2hkk20ob5vha"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Calc_1" type="Node2D" parent="."]
+script = ExtResource("1_bhnep")
+res = ExtResource("2_wh5g6")
+
+[node name="Calc_2" type="Node2D" parent="."]
+script = ExtResource("1_bhnep")
+res = ExtResource("3_ndkd3")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_bhnep")
+res = SubResource("Resource_a7i6v")
